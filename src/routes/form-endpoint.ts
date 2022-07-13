@@ -14,7 +14,7 @@ export const post: RequestHandler = async ({ request }) => {
 		console.error(error);
 		return {
 			status: 500,
-			body: error instanceof Error ? error.message : 'Server error'
+			body: error instanceof Error ? error : 'Server error'
 		};
 	}
 };
