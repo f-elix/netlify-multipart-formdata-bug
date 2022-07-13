@@ -1,2 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<form action="/form-endpoint" method="POST" enctype="multipart/form-data">
+	<label>
+		<span>Submit any value</span>
+		<input type="text" name="anything" />
+	</label>
+	<button>Submit</button>
+</form>
+
+<style lang="postcss">
+	form,
+	label {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	button {
+		margin-top: 20px;
+	}
+</style>
